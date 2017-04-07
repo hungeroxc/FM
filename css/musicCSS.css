@@ -1,248 +1,290 @@
 @charset "UTF-8";
 
-
 /* 通用 */
-    * {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-        font-family: cursive,microsoft Yahei;
-    }
 
-    .clearfix:after {
-        content: '';
-        display: block;
-        clear: both;        
-    }
-    
-    body {
-        background-color: #e8eff9;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: cursive, microsoft Yahei;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    background-color: #e8eff9;
+}
 
 
 /*总体*/
 
+#contain {
+    height: 380px;
+    width: 330px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #888888;
+    margin-left: 20%;
+    margin-top: 10%;
+    position: relative;
+}
 
+.show {
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
 
-    #contain {
-        height: 380px;
-        width: 330px;
-        border-radius: 10px;
-        box-shadow: 3px 3px 8px #888888;
-        margin-left: 20%;
-        margin-top: 10%;
-        position: relative;
-    }
-    .show {
-        height: 200px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        border-radius: 10px 10px 0 0;
-        overflow: hidden;
-    }
+.control {
+    height: 180px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
 
-    .control {
-        height: 180px;
-        background-color: white;
-        border-radius: 0 0 10px 10px;
-    }
+.server {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+}
 
-    .server {
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        bottom: 0;
-    }
 
 /*显示框*/
- 
-    .server>li {
-        width: 82.5px;
-        float: left;
-        text-align: center;
-        padding: 10px 0;    
-    }
 
-    .server>li>a {
-        color: #fffaf9;
-        font-size: 14px;
+.server>li {
+    width: 82.5px;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+}
 
-    }
+.server>li>a {
+    color: #fffaf9;
+    font-size: 14px;
+}
 
+.server>li>a>.iconfont {
+    margin-right: 5px;
+}
 
-    
-    .server>li>a>.iconfont {
-        margin-right: 5px;
-    }
 
 /*控制台*/
 
-    .wrap {
-        padding: 0 20px;
-    }
-    
-    .process {
-        padding-top: 20px;
-        margin-bottom: 15px;
-    }
-    
-    .show-p {
-        height: 8px;
-        background-color: #dae5ee;
-        border-radius: 10px;
-        cursor: pointer;
-    }
+.wrap {
+    padding: 0 20px;
+}
 
-    .control-p {
-        width: 0;
-        height: 8px;
-        background-color: #fc6c4e;
-        float: left;
-        border-radius: 10px 10px 10px 10px;
-        transition: width .2s; 
-    }
+.process {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
 
-    .endTime {
-        float: right;
-    }
+.show-p {
+    height: 8px;
+    background-color: #dae5ee;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-    .info {
-        height: 45px;
-    }
+.control-p {
+    width: 0;
+    height: 8px;
+    background-color: #fc6c4e;
+    float: left;
+    border-radius: 10px 10px 10px 10px;
+    transition: width .2s;
+}
 
-    .infoBox {
-        height: 45px;
-        float: left;
-    }
+.endTime {
+    float: right;
+}
 
-    .name {
-        font-size: 12px;
-        width: 220px;
-    }
+.info {
+    height: 45px;
+}
 
-    .author {
-        font-size: 10px;
-    }
+.infoBox {
+    height: 45px;
+    float: left;
+}
 
-    .control-sing {
-        float: left;
-        margin-top: 10px;
-    }
+.name {
+    font-size: 12px;
+    width: 220px;
+}
 
-    .play,.pause,.prev,.next {
-        color: #414a52;
-    }
+.author {
+    font-size: 10px;
+}
 
-    .play,.pause {
-        width: 40px;
-        height: 40px;
-        font-size: 40px;
-        display: inline-block;
-    }
+.control-sing {
+    float: left;
+    margin-top: 10px;
+}
 
-    .play {
-        position: relative;
-        top: 3px;
-        left: 1px;
-    }
+.play,
+.pause,
+.prev,
+.next {
+    color: #414a52;
+}
 
-    .prev,.next {
-        font-size: 25px;
-        vertical-align: text-bottom;
-    }
+.play,
+.pause {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    display: inline-block;
+}
 
+.play {
+    position: relative;
+    top: 3px;
+    left: 1px;
+}
 
-    .control-v {
-        float: right;
-        margin-top: 25px;
-    }
+.prev,
+.next {
+    font-size: 25px;
+    vertical-align: text-bottom;
+}
 
-    .volume {
-        font-size: 25px;
-        color: #414a52;
-    }
+.control-v {
+    float: right;
+    margin-top: 25px;
+}
 
-    .v-process {
-        height: 5px;
-        width: 100px;
-        background-color: #dae5ee;
-        border-radius: 5px;
-        display: inline-block;
-        vertical-align: super;
-        cursor: pointer;
-    }
+.volume {
+    font-size: 25px;
+    color: #414a52;
+}
 
-    .volume-c {
-        height: 5px;
-        width: 100%;
-        background-color: #9dcd67;
-        border-radius: 5px;
-        float: left;
-        transition: width .2s;
-    }
+.v-process {
+    height: 5px;
+    width: 100px;
+    background-color: #dae5ee;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: super;
+    cursor: pointer;
+}
+
+.volume-c {
+    height: 5px;
+    width: 100%;
+    background-color: #9dcd67;
+    border-radius: 5px;
+    float: left;
+    transition: width .2s;
+}
+
 
 /*歌词*/
-    .lrcWrap {
-        position: relative;
-        width: 330px;
-        height: 157px;
-        overflow: hidden;
-        opacity: 0;
-        display: none;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    .lyrics {
-        width: 330px;
-        padding-top: 100px;
-        position: absolute;
-        text-align: center;
-        top: 0;
-        transition: top .2s;
-        
-    }
 
-    .lyrics>li {
-        width: 330px;
-        height: 30px;
-        color: white;
-        font-size: 10px;
-    }
+.lrcWrap {
+    position: relative;
+    width: 330px;
+    height: 157px;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-    .lrcBtn,.loop {
-        font-size: 30px;
-        color: #414a52;
-        float: right;
-    }
+.lyrics {
+    width: 330px;
+    padding-top: 100px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: top .2s;
+}
 
-    .showNow {
-        color: #fc6c4e;
-    }
+.lyrics>li {
+    width: 330px;
+    height: 30px;
+    color: white;
+    font-size: 10px;
+}
+
+.lrcBtn,
+.loop {
+    font-size: 30px;
+    color: #414a52;
+    float: right;
+}
+
+.showNow {
+    color: #fc6c4e;
+}
+
 
 /* 播放历史列表 */
-    .playList,.songList {
+
+.playList,
+.songList {
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    background-color: #434a54;
+    border-radius: 0 5px 5px 0;
+    top: 10px;
+    left: 130px;
+    z-index: -1;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.playList>li,
+.songList>li {
+    padding: 10px 0 10px 15px;
+    border-bottom: 1px solid #434A81;
+    color: #aaa;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.server>li>.showList {
+    color: #fc6c4e;
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        padding: 30% 0;
+    }
+    #contain {
+        height: 100%;
+        width: 100%;
+        box-shadow: 3px 3px 8px #888888;
+        margin: 0;
+    }
+    .server {
+        width: 100%;
+    }
+    .server>li {
+        width: 25%;
+    }
+    .playList,
+    .songList {
         position: absolute;
-        width: 200px;
-        height: 350px;
+        width: 100%;
+        height: 30%;
         background-color: #434a54;
-        border-radius: 0 5px 5px 0;
-        top: 10px;
-        left: 130px;
-        z-index: -1;
-        display: none;
-        overflow-y: auto;
-        overflow-x: hidden;
+        border-radius: 0 0 5px 5px;
+        top: 267px;
+        left: 0;
+        overflow-y: scroll;
     }
-
-
-    .playList>li,.songList>li {
-        padding: 10px 0 10px 15px;
-        border-bottom: 1px solid #434A81;
-        color: #aaa;
-        font-size: 12px;
-        cursor: pointer;
+    .lrcWrap,
+    .lrcWrap>.lyrics,
+    .lyrics>li {
+        width: 100%
     }
-
-    .server>li>.showList {
-        color: #fc6c4e;
-    }
+}
